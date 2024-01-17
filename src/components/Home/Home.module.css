@@ -133,13 +133,11 @@ span{
 
     .btn {
         flex: 2;
-        border: 1px solid red;
         width: 80%;
     }
 
     .work_display{
        justify-content: space-between;
-       border: 1px solid red;
     }
     
 
