@@ -30,16 +30,18 @@ return(
         <div>
           <h2>Product Designer at Semicolon</h2>
 
-          <p>I am a product designer that cares about words (copy), a strong user advocate with eyes on business goals yet promoting an inclusive experience for the users. I have helped companies increase users <span>acquisition, adoption, & retention by simple onboarding.</span> With my experience with different engineers, designers, product managers and other stakeholders, it has trained me on how to approach complex problems with solutions that drives <span>business goals while empowering users.</span> </p>
+          <div className={styles.profile_details}>
+            <p>I am a product designer that cares about words (copy), a strong user advocate with eyes on business goals yet promoting an inclusive experience for the users. I have helped companies increase users <span>acquisition, adoption, & retention by simple onboarding.</span> With my experience with different engineers, designers, product managers and other stakeholders, it has trained me on how to approach complex problems with solutions that drives <span>business goals while empowering users.</span> </p>
 
-          <p>I am currently based in Lagos, Nigeria and I lead the design team at Semicolon Africa focusing on <span>UX and strategy direction</span> for Semicolon’s internal and external projects </p>
+            <p>I am currently based in Lagos, Nigeria and I lead the design team at Semicolon Africa focusing on <span>UX and strategy direction</span> for Semicolon’s internal and external projects </p>
 
-          <p>I have experiences in UX/UI Design, User Research, Design Systems, Usability Testing, Mentoring, Facilitation, and Culture Cultivation. </p>
+            <p>I have experiences in UX/UI Design, User Research, Design Systems, Usability Testing, Mentoring, Facilitation, and Culture Cultivation. </p>
+          </div>
         </div>
       </div>
 
       <div className={styles.work_display}>
-        <Button text="View my work"/>
+        <Button text="View my work" className={styles.btn}/>
         <img src={linkedin} alt="linkedin" />
       </div>
     </div>

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { NavLink} from 'react-router-dom';
 import styles from './Nav.module.css';
+import hamburger from '../../images/ci_hamburger-lg.png'
 
 const Nav = () => {
   // const location = useLocation();
@@ -17,7 +18,8 @@ const Nav = () => {
   <div className={styles.container}>
     <div className={styles.nav}>
       <div className={styles.nav_toggle} onClick={toggleMenu}>
-        <div className={styles.hamburger}></div>
+        <div className={styles.hamburger}>
+        <img src={hamburger} alt="hamburger" /></div>
       </div>
 
       <div className={`${styles.navbar_menu} ${menuOpen ? `${styles.show}` : ''}`}>
