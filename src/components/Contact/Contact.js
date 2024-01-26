@@ -2,12 +2,13 @@ import React from 'react';
 import styles from'./Contact.module.css'; // Import your CSS file for styling
 import Nav from '../Nav/Nav';
 import { Link } from 'react-router-dom';
+import backBtn from '../../images/chevron-left.png'
 
 const Contact = () => {
   return (
     <div className={styles.container}>
       <div className={styles.top_nav}>
-        <Link to="/">&lt; Back</Link>
+        <Link to="/" className={styles.backBtn}><img src={backBtn} alt="linkedin" /> Back</Link>
         <Nav />
       </div>
       
@@ -22,13 +23,13 @@ const Contact = () => {
 
             <div className={styles.form_row}>
               <div className={styles.half_width}>
-                <label for='firstName'>First Name</label>
-                <input id='firstName' wtype="text" placeholder="First Name" />
+                <label for='firstName'>First name</label>
+                <input id='firstName' wtype="text" placeholder="First name" />
               </div>
 
               <div className={styles.half_width}>
-                <label for='lastName'>Last Name</label>
-                <input id='lastName' type="text" placeholder="Last Name" />
+                <label for='lastName'>Last name</label>
+                <input id='lastName' type="text" placeholder="Last name" />
               </div>
             </div>
 
