@@ -1,0 +1,41 @@
+.resume-page {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+}
+
+.image-side {
+  flex: 1;
+  height: 100vh;
+  position: relative;
+}
+
+.content-side {
+  flex: 1;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  gap: 1.5rem;
+  /* This ensures proper spacing */
+  overflow: hidden;
+}
+
+@media (max-width: 768px) {
+  .resume-page {
+    flex-direction: column;
+    overflow: hidden;
+  }
+
+  .image-side {
+    height: 50vh;
+  }
+
+  .content-side {
+    height: 50vh;
+    overflow: hidden;
+  }
+}
